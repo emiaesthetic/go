@@ -13,7 +13,13 @@
   <meta name="msapplication-config" content="img/icons/browserconfig.xml">
   <meta name="theme-color" content="#000000">
 
-  <title>Как добавлять изображения на сайт</title>
+  <title>Формы</title>
+
+  <style>
+    div {
+      margin: 5px 0px;
+    }
+  </style>
 </head>
 
 <body>
@@ -29,7 +35,7 @@
         <a href="#about">О нас</a>
       </li>
       <li>
-        <a href="#contact">Бронь</a>
+        <a href="#reservation">Бронь</a>
       </li>
       <li>
         <a href="http://google.com">Отзывы</a>
@@ -105,6 +111,102 @@
       </li>
     </ol>
   </div>
+
+  <form id="reservation" action="https://jsonplaceholder.typicode.com/posts" method="post">
+    <h2>Забронировать</h2>
+
+    <fieldset>
+      <fieldset>
+        <div>
+          <input type="radio" name="hall" value="vibes">80's vibes
+          <input type="radio" name="hall" value="star_wars">star wars
+          <input type="radio" name="hall" value="wild_west">wild west
+          <input type="radio" name="hall" value="neon_style">neon style
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Собери набор развлечений</legend>
+
+        <fieldset>
+          <legend>Приставка:</legend>
+
+          <div>
+            <input type="radio" name="console" value="playstation">PlayStation
+            <input type="radio" name="console" value="sega">Sega Mega Drive
+            <input type="radio" name="console" value="x-box">X-box One S
+            <input type="radio" name="console" value="dendy">Dendy
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Настольные игры:</legend>
+
+          <div>
+            <input type="checkbox" name="board_game" value="jenga">Jenga
+            <input type="checkbox" name="board_game" value="monopoly">Monopoly
+            <input type="checkbox" name="board_game" value="munchkin">Манчкин
+            <input type="checkbox" name="board_game" value="alias">Alias
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Дополнительно:</legend>
+
+          <div>
+            <input type="checkbox" name="optional" value="karaoke">Караоке
+            <input type="checkbox" name="optional" value="vr">VR
+          </div>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Выберите дату и время</legend>
+
+        <div>
+          <label for="date">Дата*</label>
+          <input type="date" name="date" id="date" required>
+
+          <label for="time">Время*</label>
+          <input type="time" name="time" id="time" required>
+        </div>
+
+        <div>
+          <label for="count">Количество человек*</label>
+          <input type="number" name="count" id="count" required>
+        </div>
+
+        <div>
+          <label for="first_name">Имя*</label>
+          <input type="text" name="first_name" id="first_name" required>
+        </div>
+
+        <div>
+          <label for="last_name">Фамилия*</label>
+          <input type="text" name="last_name" id="last_name" required>
+        </div>
+
+        <div>
+          <label for="phone">Номер телефона*</label>
+          <input type="tel" name="phone" id="phone" required title="+7-___-___-__-__"
+            pattern="^\+?[7-8]-?(?[0-9]{3})?-?[0-9]{3}-?[0-9]{2}-?[0-9]{2}"
+          >
+        </div>
+
+        <div>
+          <input type="checkbox" name="access" id="access">
+          <label for="access">Я старше 18 лет</label>
+        </div>
+      </fieldset>
+    </fieldset>
+
+    <div>
+      <button type="submit">Забронировать</button>
+
+      <input type="checkbox" name="agree" id="agree" required>
+      <label for="agree">Согласен на обработку данных</label>
+    </div>
+  </form>
 
   <div>
     <h2 id="about">О нас</h2>
