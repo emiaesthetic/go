@@ -1,0 +1,23 @@
+.fqa__item {
+  background-color: #fff;
+  color: #1C1A1A;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 30px 70px;
+  margin-bottom: 20px;
+}
+
+.fqa__item:nth-child(even) {
+  background-color: #440F51;
+  color: #fff;
+}
+
+.fqa__item:after {
+  content: url(../img/open-purple.svg);
+}
+
+.fqa__item:nth-child(even):after {
+  content: url(../img/open.svg);
+  display: inline-block;
+  width: 45px;
+}
