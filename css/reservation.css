@@ -1,0 +1,12 @@
+.reservation {
+  padding: 50px 0;
+}
+
+.reservation__title {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+}

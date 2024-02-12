@@ -1,0 +1,45 @@
+.about {
+  padding: 50px 0;
+}
+
+.about__title {
+  margin-bottom: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.about__text {
+  margin-bottom: 78px;
+  line-height: 1.4;
+}
+
+.about__quote {
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 44px;
+  line-height: 1.14;
+  white-space: pre-wrap;
+}
+
+.marks {
+  font-size: 44px;
+  font-weight: 900;
+  color: #6c0287;
+}
+
+.about__author {
+  display: flex;
+  justify-content: end;
+}
+
+.author__image {
+  margin-right: 30px;
+  padding: 7px 0;
+}
+
+.author__desc {
+  line-height: 1.4;
+}

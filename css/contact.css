@@ -1,0 +1,54 @@
+.contact {
+	padding: 50px 0;
+}
+
+.contact__title {
+	margin-bottom: 54px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.25;
+}
+
+.contact__info {
+  margin-bottom: 39px;
+  font-style: normal;
+}
+
+.contact__info svg {
+  color: #cd06ff;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact__address {
+  margin-bottom: 38px;
+}
+
+.contact__phone {
+	margin-bottom: 11px;
+}
+
+.contact__text {
+  padding-left: 66px;
+  font-size: 24px;
+	font-weight: 700;
+	line-height: 1.17;
+}
+
+.social {
+	display: flex;
+	list-style-type: none;
+}
+
+.social__item {
+	margin-right: 27px;
+}
+
+.social__item:last-child {
+	margin-right: 0;
+}
