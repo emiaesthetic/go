@@ -3,16 +3,35 @@
 }
 
 body {
-  background-color: #1b1a1b;
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+
+  background: #1b1a1b;
   color: #fff;
 }
 
-.wrapper {
-  width: 1200px;
-  padding: 30px;
-  margin: 0 auto;
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
 
-blockquote>span {
-  text-transform: uppercase;
+img, svg {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1240px;
+  padding: 0 30px;
+  margin: 0 auto;
 }
