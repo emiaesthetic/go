@@ -17,5 +17,6 @@
 .hero__subtitle {
 	padding-left: 100px;
 	font-size: 28px;
+  font-weight: 400;
 	line-height: 1.79;
 }

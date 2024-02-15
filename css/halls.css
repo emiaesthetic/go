@@ -1,22 +1,20 @@
 .halls {
 	padding: 50px 0;
-	text-align: center;
-	text-transform: uppercase;
-	font-weight: 700;
 }
 
 .halls__title {
 	margin-bottom: 60px;
+
 	font-size: 40px;
+  font-weight: 700;
 	line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .halls__item {
-	height: 710px;
+  height: 710px;
 	margin-bottom: 60px;
-	list-style: none;
-	font-size: 70px;
-	line-height: 1.14;
 }
 
 .halls__item:last-child {
@@ -24,8 +22,13 @@
 }
 
 .halls__text {
-  padding: 275px;
+  padding-top: 275px;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.14;
 	word-spacing: 100vw;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .vibes {
