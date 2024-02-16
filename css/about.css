@@ -4,42 +4,53 @@
 
 .about__title {
   margin-bottom: 50px;
-  text-align: center;
-  text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.about__text {
-  margin-bottom: 78px;
+.about__content {
+  font-size: 20px;
   line-height: 1.4;
 }
 
-.about__quote {
-  margin-bottom: 40px;
-  text-transform: uppercase;
+.about__content:last-of-type {
+  margin-bottom: 78px;
+}
+
+.quote__inner {
+  margin: 0 0 40px 0;
   font-size: 44px;
   line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.quote__text {
+  display: inline;
   white-space: pre-wrap;
 }
 
-.marks {
-  font-size: 44px;
+.quote__mark {
   font-weight: 900;
+}
+
+.quote__mark--purple {
   color: #6c0287;
 }
 
-.about__author {
+.quote__author {
   display: flex;
   justify-content: end;
 }
 
-.author__image {
+.quote__image {
   margin-right: 30px;
   padding: 7px 0;
 }
 
-.author__desc {
+.quote__description {
+  font-size: 20px;
   line-height: 1.4;
 }

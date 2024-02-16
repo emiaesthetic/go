@@ -4,19 +4,25 @@
 
 .reservation__title {
   margin-bottom: 50px;
-  text-align: center;
-  text-transform: uppercase;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-.btn {
+.form__fieldset {
+  margin-bottom: 5px;
+}
+
+.form__item {
+  display: inline;
+  font-size: 16px;
+}
+
+.button {
   padding: 5px 10px;
   background-color: #fff;
   border: 1px solid #fff;
-}
-
-.access {
-  display: inline;
+  border-radius: 5px;
 }

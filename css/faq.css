@@ -4,26 +4,26 @@
 
 .fqa__title {
 	margin-bottom: 40px;
-	text-align: center;
-	text-transform: uppercase;
 	font-size: 40px;
 	font-weight: 700;
 	line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .fqa__item {
+  margin-bottom: 20px;
 	padding: 30px 70px;
-	margin-bottom: 20px;
-	list-style: none;
+  font-size: 24px;
 	font-weight: 700;
-	font-size: 24px;
-	background: #fff url(../img/open-purple.svg) center right 70px no-repeat;
+
 	color: #1c1a1a;
+  background: #fff url(../img/open-purple.svg) center right 70px no-repeat;
 }
 
 .fqa__item:nth-child(even) {
+  color: #fff;
 	background: #440f51 url(../img/open.svg) center right 70px no-repeat;
-	color: #fff;
 }
 
 .fqa__item:last-child {
