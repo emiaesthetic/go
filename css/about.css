@@ -3,12 +3,29 @@
 }
 
 .about__title {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   font-size: 40px;
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
   text-align: center;
+}
+
+.about__row {
+  font-size: 0; /* чтобы убрать отступ у inline-block */
+}
+
+.about__column-first {
+  display: inline-block;
+  margin-right: 80px;
+}
+
+.about__column-second {
+  display: inline-block;
+  max-width: 500px;
+  vertical-align: top;
+
+  font-size: 20px; /* для тега br */
 }
 
 .about__content {
@@ -17,11 +34,11 @@
 }
 
 .about__content:last-of-type {
-  margin-bottom: 78px;
+  margin-bottom: 48px;
 }
 
 .quote__inner {
-  margin: 0 0 40px 0;
+  margin-bottom: 39px;
   font-size: 44px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -42,12 +59,11 @@
 
 .quote__author {
   display: flex;
-  justify-content: end;
+  padding-left: 111px;
 }
 
 .quote__image {
   margin-right: 30px;
-  padding: 7px 0;
 }
 
 .quote__description {

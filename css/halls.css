@@ -22,11 +22,10 @@
 }
 
 .halls__text {
-  padding-top: 275px;
+  padding-top: 315px;
   font-size: 70px;
   font-weight: 700;
   line-height: 1.14;
-	word-spacing: 100vw;
   text-transform: uppercase;
   text-align: center;
 }

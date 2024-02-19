@@ -64,7 +64,8 @@ h2,
 h3,
 p,
 figure,
-fieldset {
+fieldset,
+blockquote {
   margin: 0;
 }
 
