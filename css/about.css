@@ -49,12 +49,23 @@
   white-space: pre-wrap;
 }
 
-.quote__mark {
-  font-weight: 900;
+.quote__text:before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/quotes-start.png);
+  background-repeat: no-repeat;
 }
 
-.quote__mark--purple {
-  color: #6c0287;
+.quote__text:after {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/quotes-end.png);
+  background-repeat: no-repeat;
+  background-position: 15px 7px;
 }
 
 .quote__author {
