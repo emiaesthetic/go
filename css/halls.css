@@ -1,9 +1,9 @@
-.halls {
+.hall {
 	padding: 50px 0;
 }
 
-.halls__title {
-	margin-bottom: 60px;
+.hall__title {
+	margin-bottom: 40px;
 
 	font-size: 40px;
   font-weight: 700;
@@ -12,17 +12,31 @@
   text-align: center;
 }
 
-.halls__item {
-  height: 710px;
-	margin-bottom: 60px;
+.hall__items {
+  font-size: 0; /* для обнуления отступа у inline-block */
 }
 
-.halls__item:last-child {
-	margin-bottom: 0;
+.hall__item {
+  position: relative;
+  display: inline-block;
+  width: 580px;
+  height: 349px;
 }
 
-.halls__text {
-  padding-top: 315px;
+.hall__item:nth-child(-n + 2) {
+  margin-bottom: 20px;
+}
+
+.hall__item:not(:nth-child(2n)) {
+  margin-right: 20px;
+}
+
+.hall__text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 135px;
+
   font-size: 70px;
   font-weight: 700;
   line-height: 1.14;

@@ -1,0 +1,46 @@
+.review {
+  padding: 50px 0;
+}
+
+.review__container {
+  max-width: 1040px;
+}
+
+.review__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.review__item {
+  display: flow-root;
+  margin-bottom: 50px;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.review__item:last-child {
+  margin-bottom: 0;
+}
+
+.review__reviewer {
+  float: left;
+}
+
+.review__img {
+  margin-right: 20px;
+  margin-bottom: 11px;
+}
+
+.review__name {
+  text-align: center;
+}
+
+.review__text {
+  padding-top: 52px;
+}

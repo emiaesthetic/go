@@ -3,9 +3,16 @@
 }
 
 .hero__inner {
+  position: relative;
 	min-height: 969px;
 	padding-top: 146px;
-	background: url(../img/male-vr.png) right bottom -40px no-repeat;
+}
+
+.hero__inner:after {
+  content: url(../img/male-vr.png);
+  position: absolute;
+  right: 0;
+  bottom: -40px;
 }
 
 .hero__title {

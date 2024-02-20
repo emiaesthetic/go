@@ -45,27 +45,23 @@
 }
 
 .quote__text {
+  position: relative;
   display: inline;
   white-space: pre-wrap;
 }
 
 .quote__text:before {
-  content: '';
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-image: url(../img/quotes-start.png);
-  background-repeat: no-repeat;
+  content: url('../img/quotes-start.png');
+  position: absolute;
+  left: 0;
+  top: -20px;
 }
 
 .quote__text:after {
-  content: '';
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  background-image: url(../img/quotes-end.png);
-  background-repeat: no-repeat;
-  background-position: 15px 7px;
+  content: url('../img/quotes-end.png');
+  position: absolute;
+  right: -30px;
+  bottom: 15px;
 }
 
 .quote__author {
