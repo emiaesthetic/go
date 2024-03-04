@@ -1,0 +1,37 @@
+.footer {
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__details {
+  display: flex;
+  column-gap: 28px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.17;
+}
+
+.contacts__icon {
+  color: #cd06ff;
+}
+
+.location {
+  margin-bottom: 39px;
+}
+
+.phone {
+  margin-bottom: 14px;
+}
+
+.email {
+  margin-bottom: 35px;
+}
+
+.social__items {
+  display: flex;
+  column-gap: 26px;
+}

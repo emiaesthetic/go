@@ -1,79 +1,51 @@
-.about {
-  padding: 50px 0;
-}
-
-.about__title {
-  margin-bottom: 40px;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 1.25;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.about__row {
-  font-size: 0; /* чтобы убрать отступ у inline-block */
-}
-
-.about__column-first {
-  display: inline-block;
-  margin-right: 80px;
-}
-
-.about__column-second {
-  display: inline-block;
-  max-width: 500px;
-  vertical-align: top;
-
-  font-size: 20px; /* для тега br */
+.about__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .about__content {
-  font-size: 20px;
-  line-height: 1.4;
+  flex-basis: 500px;
 }
 
-.about__content:last-of-type {
+.about__text {
   margin-bottom: 48px;
 }
 
-.quote__inner {
+.about__blockquote {
+  position: relative;
   margin-bottom: 39px;
+  padding-left: 31px;
+
   font-size: 44px;
   line-height: 1.14;
   text-transform: uppercase;
 }
 
-.quote__text {
-  position: relative;
-  display: inline;
-  white-space: pre-wrap;
-}
-
-.quote__text:before {
-  content: url('../img/quotes-start.png');
+.about__blockquote:before {
+  content: url(../img/about/quotes-start.png);
   position: absolute;
-  left: 0;
   top: -20px;
+  left: 0;
 }
 
-.quote__text:after {
-  content: url('../img/quotes-end.png');
+.about__blockquote:after {
+  content: url(../img/about/quotes-end.png);
   position: absolute;
-  right: -30px;
   bottom: 15px;
+  right: 110px;
 }
 
-.quote__author {
+.about__creator {
+  position: relative;
   display: flex;
-  padding-left: 111px;
+  width: 280px;
+  margin-left: auto;
+  padding-left: 30px;
 }
 
-.quote__image {
-  margin-right: 30px;
-}
-
-.quote__description {
-  font-size: 20px;
-  line-height: 1.4;
+.about__creator:before {
+  content: url(../img/about/creator.png);
+  position: absolute;
+  top: 3px;
+  left: -80px;
 }

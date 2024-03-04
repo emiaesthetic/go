@@ -1,3 +1,7 @@
+:root {
+  scroll-behavior: smooth;
+}
+
 html {
   position: relative;
   box-sizing: border-box;
@@ -15,9 +19,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+
   font-family: Arial, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -64,18 +72,53 @@ h2,
 h3,
 p,
 figure,
-fieldset,
 blockquote {
   margin: 0;
+}
+
+h2 {
+  margin-bottom: 40px;
+
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 iframe {
   border: none;
 }
 
+section {
+  padding: 50px 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  margin-left: -70px;
+}
+
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
+}
+
+.main {
+  flex: 1;
 }
 
 .container {

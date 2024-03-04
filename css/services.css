@@ -1,0 +1,38 @@
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.services__item {
+  flex-basis: 380px;
+  padding: 166px 40px 6px;
+
+  font-weight: 700;
+
+  background-repeat: no-repeat;
+}
+
+.services__item--vr-glasses {
+  background-image: url(../img/services/vr_glasses.jpg);
+}
+
+.services__item--audio {
+  background-image: url(../img/services/audio.jpg);
+}
+
+.services__item--karaoke {
+  background-image: url(../img/services/karaoke.jpg);
+}
+
+.services__item--board-games {
+  background-image: url(../img/services/board_games.jpg);
+}
+
+.services__item--movies {
+  background-image: url(../img/services/movies.jpg);
+}
+
+.services__item--playstation {
+  background-image: url(../img/services/playstation.jpg);
+}
