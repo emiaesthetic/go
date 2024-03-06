@@ -19,6 +19,19 @@
   color: #cd06ff;
 }
 
+.contacts__text:hover {
+  color: #cd06ff;
+}
+
+.contacts__text:focus {
+  color: #640aa3;
+  outline: none;
+}
+
+.contacts__text:active {
+  color: #640aa3;
+}
+
 .location {
   margin-bottom: 39px;
 }
@@ -34,4 +47,21 @@
 .social__items {
   display: flex;
   column-gap: 26px;
+}
+
+.social__icon:hover {
+  color: #eadeed;
+}
+
+.social__link:focus-visible {
+  outline: none;
+}
+
+.social__link:focus .social__icon {
+  color: #eadeed;
+  outline: 1px solid #cd06ff;
+}
+
+.social__link:active .social__icon {
+  color: #cd06ff;
 }

@@ -44,6 +44,23 @@
   border-radius: 8px;
 }
 
+.form-room__label:hover {
+  outline: 3px solid #640aa3;
+  background-color: #eadeed;
+}
+
+.form-room__radio:focus + .form-room__label {
+  outline: 3px solid #640aa3;
+  background-color: #fff;
+}
+
+.form-room__label:active,
+.form-room__radio:checked + .form-room__label {
+  outline: 3px solid #fff;
+  color: #fff;
+  background-color: #6c0287;
+}
+
 .form-entertainment__title {
   margin-bottom: 25px;
 
@@ -124,6 +141,11 @@
   outline: none;
 }
 
+.form-entertainment__radio:focus:before,
+.form-entertainment__checkbox:focus:before {
+  outline: 2.5px solid #cd06ff;
+}
+
 .form-entertainment__radio:checked:after,
 .form-entertainment__checkbox:checked:after {
   opacity: 1
@@ -160,6 +182,10 @@
   color: #211e1e;
 }
 
+.form-details__input:focus {
+  outline: 2px solid #cd06ff;
+}
+
 .form-details__input--date {
   width: 134px;
 }
@@ -184,4 +210,19 @@
   color: #6c0287;
   background-color: #fff;
   border-radius: 10px;
+}
+
+.form__button:hover {
+  background-color: #eadeed;
+  outline: 3px solid #6c0287;
+}
+
+.form__button:focus {
+  outline: 3px solid #6c0287;
+  background-color: #fff;
+}
+
+.form__button:active {
+  background-color: #eadeed;
+  outline: none;
 }

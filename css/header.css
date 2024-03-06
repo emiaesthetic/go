@@ -19,6 +19,19 @@
   text-transform: uppercase;
 }
 
+.header__menu-link:hover {
+  color: #6c0287;
+}
+
+.header__menu-link:focus {
+  color: #640aa3;
+  outline: none;
+}
+
+.header__menu-link:active {
+  color: #640aa3;
+}
+
 .header__button {
   padding: 12px 32px 13px;
 
@@ -30,4 +43,20 @@
   color: #fff;
   border: 3px solid #cd06ff;
   border-radius: 10px;
+}
+
+.header__button:hover,
+.header__button:focus {
+  border-color: transparent;
+  background-color: #6c0287;
+}
+
+.header__button:focus {
+  outline: none;
+}
+
+.header__button:active {
+  border-color: transparent;
+  background-color: #640aa3;
+  outline: 1px solid #fff;
 }

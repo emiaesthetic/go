@@ -12,3 +12,16 @@
   flex-direction: column;
   align-items: flex-end;
 }
+
+.footer__link:hover {
+  color: #cd06ff;
+}
+
+.footer__link:focus {
+  color: #640aa3;
+  outline: none;
+}
+
+.footer__link:active {
+  color: #640aa3;
+}
