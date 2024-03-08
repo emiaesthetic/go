@@ -28,6 +28,7 @@
   border: 2px solid #fff;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color .3s, color .2s linear;
 }
 
 .fqa__item:nth-child(odd) .fqa__icon {

@@ -13,6 +13,10 @@
   align-items: flex-end;
 }
 
+.footer__link {
+  transition: color .2s linear;
+}
+
 .footer__link:hover {
   color: #cd06ff;
 }

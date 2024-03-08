@@ -11,6 +11,11 @@
   font-weight: 700;
 
   background-repeat: no-repeat;
+  transition: transform .3s linear;
+}
+
+.services__item:hover {
+  transform: scale(1.1);
 }
 
 .services__item--vr-glasses {
