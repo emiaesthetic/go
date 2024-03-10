@@ -16,24 +16,26 @@
 }
 
 .contacts__icon {
-  color: #cd06ff;
+  color: var(--color-pink);
 }
 
 .contacts__text {
-  transition: color .2s linear;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
-.contacts__text:hover {
-  color: #cd06ff;
+.contacts__text:hover,
+.contacts__text:focus {
+  color: var(--color-pink);
 }
 
 .contacts__text:focus {
-  color: #640aa3;
   outline: none;
 }
 
 .contacts__text:active {
-  color: #640aa3;
+  color: var(--color-purple-intense);
 }
 
 .location {
@@ -54,11 +56,13 @@
 }
 
 .social__icon {
-  transition: color .2s, outline-color .3s linear;
+  transition-property: outline-color, color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .social__icon:hover {
-  color: #eadeed;
+  color: var(--color-purple-opacity);
 }
 
 .social__link:focus-visible {
@@ -66,10 +70,10 @@
 }
 
 .social__link:focus .social__icon {
-  color: #eadeed;
-  outline: 1px solid #cd06ff;
+  color: var(--color-purple-opacity);
+  outline: 1px solid var(--color-pink);
 }
 
 .social__link:active .social__icon {
-  color: #cd06ff;
+  color: var(--color-pink);
 }

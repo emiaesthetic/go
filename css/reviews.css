@@ -9,8 +9,20 @@
   margin-bottom: 0;
 }
 
-.reviews__img {
+.reviews__img-wrapper {
+  position: relative;
   margin-bottom: 11px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__img-wrapper:after {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);;
 }
 
 .reviews__name {

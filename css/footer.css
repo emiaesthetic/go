@@ -14,18 +14,20 @@
 }
 
 .footer__link {
-  transition: color .2s linear;
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
-.footer__link:hover {
-  color: #cd06ff;
+.footer__link:hover,
+.footer__link:focus {
+  color: var(--color-pink);
 }
 
 .footer__link:focus {
-  color: #640aa3;
   outline: none;
 }
 
 .footer__link:active {
-  color: #640aa3;
+  color: var(--color-purple-intense);
 }
