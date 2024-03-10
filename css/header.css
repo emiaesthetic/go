@@ -17,20 +17,23 @@
   font-size: 22px;
   line-height: 2.27;
   text-transform: uppercase;
-  transition: color .2s linear;
+
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
-.header__menu-link:hover {
-  color: #6c0287;
+.header__menu-link:hover,
+.header__menu-link:focus {
+  color: var(--color-pink);
 }
 
 .header__menu-link:focus {
-  color: #640aa3;
   outline: none;
 }
 
 .header__menu-link:active {
-  color: #640aa3;
+  color: var(--color-purple-intense);
 }
 
 .header__button {
@@ -41,21 +44,18 @@
   line-height: 1.36;
   text-transform: uppercase;
 
-  color: #fff;
-  border: 3px solid #cd06ff;
-  border-radius: 10px;
-  transition:
-    background-color .3s,
-    outline-color .3s,
-    border-color .3s,
-    transform .1s;
-  transition-timing-function: linear;
+  color: var(--color-purple-opacity);
+  border: 3px solid var(--color-pink);
+  border-radius: var(--border-radius);
+  transition-property: background-color, outline-color, border-color, transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .header__button:hover,
 .header__button:focus {
   border-color: transparent;
-  background-color: #6c0287;
+  background-color: var(--color-purple);
 }
 
 .header__button:focus {
@@ -64,7 +64,7 @@
 
 .header__button:active {
   border-color: transparent;
-  background-color: #640aa3;
-  outline: 1px solid #fff;
+  background-color: var(--color-purple-intense);
+  outline: 1px solid var(--color-light);
   transform: scale(0.98);
 }

@@ -5,13 +5,13 @@
   justify-content: space-between;
   align-items: center;
 
-  color: #1c1a1a;
-  background-color: #fff;
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 .fqa__item:nth-child(even) {
-  color: #fff;
-  background-color: #440f51;
+  color: var(--color-light);
+  background-color: var(--color-purple-dark);
 }
 
 .fqa__item:last-child {
@@ -25,25 +25,27 @@
 }
 
 .fqa__icon {
-  border: 2px solid #fff;
+  border: 2px solid var(--color-light);
   border-radius: 50%;
   cursor: pointer;
-  transition: background-color .3s, color .2s linear;
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
 }
 
 .fqa__item:nth-child(odd) .fqa__icon {
-  color: #440f51;
-  border-color: #440f51;
+  color: var(--color-purple-dark);
+  border-color: var(--color-purple-dark);
 }
 
 .fqa__item:nth-child(odd) .fqa__icon:hover {
-  color: #fff;
-  background-color: #440f51;
+  color: var(--color-light);
+  background-color: var(--color-purple-dark);
 }
 
 .fqa__item:nth-child(even) .fqa__icon:hover  {
-  color: #440f51;
-  background-color: #fff;
+  color: var(--color-purple-dark);
+  background-color: var(--color-light);
 }
 
 .fqa__icon:active .fqa__line-active {
