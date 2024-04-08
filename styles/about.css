@@ -1,0 +1,273 @@
+.about {
+  padding-top: 100px;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: minmax(420px, 600px) minmax(444px, 500px);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:
+    'collage description'
+    'collage creator';
+  justify-content: center;
+  align-items: start;
+  gap: 80px;
+}
+
+.about__img {
+  grid-area: collage;
+}
+
+.about__description {
+  grid-area: description;
+
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.about__description-text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.about__creator {
+  grid-area: creator;
+  align-self: end;
+}
+
+.about__creator-tagline {
+  position: relative;
+
+  max-width: 420px;
+  margin-bottom: 39px;
+  padding-left: 30px;
+
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.about__creator-tagline:before {
+  content: '“';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about__creator-tagline:before,
+.about__creator-quote {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.14;
+
+  color: var(--color-eggplant);
+}
+
+.about__creator-description {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  column-gap: 30px;
+}
+
+.about__creator-name {
+  max-width: 270px;
+
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* Media */
+
+@media (max-width: 1280px) {
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__container {
+    grid-template-columns: minmax(382px, 420px) minmax(278px, 444px);
+    gap: 26px 40px;
+  }
+
+  .about__description {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .about__creator-tagline {
+    margin-bottom: 13px;
+    padding-left: 25px;
+
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .about__creator-tagline:before,
+  .about__creator-quote {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .about__creator-description {
+    column-gap: 35px;
+  }
+
+  .about__creator-img {
+    width: 70px;
+  }
+
+  .about__creator-name {
+    max-width: 225px;
+
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+
+@media (max-width: 1080px) {
+  .about__title {
+    margin-bottom: 26px;
+  }
+
+  .about__description-text:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 940px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__title {
+    margin-bottom: 30px;
+  }
+
+  .about__container {
+    grid-template-columns: minmax(280px, 382px) minmax(200px, 278px);
+    grid-template-areas:
+      'collage description'
+      'creator creator';
+    gap: 35px 28px;
+  }
+
+  .about__description {
+    align-self: center;
+
+    font-size: 16px;
+    line-height: 1.375;
+  }
+
+  .about__creator-tagline {
+    max-width: 100%;
+    margin-bottom: 25px;
+    padding-left: 22px;
+
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  .about__creator-tagline:before,
+  .about__creator-quote {
+    font-size: 32px;
+    line-height: 1.125;
+  }
+
+  .about__creator-description {
+    column-gap: 25px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about__creator-tagline,
+  .about__creator-tagline:before,
+  .about__creator-quote {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'description'
+      'collage'
+      'creator';
+    gap: 20px;
+  }
+
+  .about__description {
+    font-size: 14px;
+  }
+
+  .about__description-text:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .about__creator-tagline {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    font-size: 22px;
+  }
+
+  .about__creator-tagline:before,
+  .about__creator-quote {
+    font-size: 22px;
+  }
+
+  .about__creator-description {
+    column-gap: 20px;
+  }
+
+  .about__creator-name {
+    max-width: 180px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .about__description {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+
+  .about__description-text:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .about__creator-tagline {
+    margin-bottom: 9px;
+  }
+
+  .about__creator-tagline,
+  .about__creator-tagline:before,
+  .about__creator-quote {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  .about__creator-description {
+    justify-content: start;
+    column-gap: 11px;
+  }
+
+  .about__creator-img {
+    width: 56px;
+  }
+
+  .about__creator-name {
+    max-width: unset;
+    align-self: center;
+
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}

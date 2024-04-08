@@ -1,0 +1,141 @@
+.reviews__item {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.reviews__item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.reviews__img-inner {
+  position: relative;
+  margin-bottom: 20px;
+
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.reviews__img-inner:before {
+  content: '';
+  position: absolute;
+  inset: 0;
+
+  background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%);
+}
+
+.reviews__reviewer-name {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.reviews__text {
+  max-width: 680px;
+  padding-top: 55px;
+
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+/* Media */
+
+@media (max-width: 1080px) {
+  .reviews__title {
+    margin-bottom: 26px;
+  }
+
+  .reviews__item {
+    column-gap: 38px;
+  }
+
+  .reviews__img-inner {
+    width: 172px;
+  }
+
+  .reviews__reviewer-name {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+
+  .reviews__text {
+    max-width: 515px;
+    padding-top: 33px;
+
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews__title {
+    margin-bottom: 30px;
+  }
+
+  .reviews__item {
+    column-gap: 15px;
+  }
+
+  .reviews__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .reviews__img-inner {
+    width: 153px;
+    margin-bottom: 17px;
+  }
+
+  .reviews__reviewer-name {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+
+  .reviews__text {
+    max-width: 393px;
+    padding-top: 30px;
+
+    font-size: 16px;
+    line-height: 1.38;
+  }
+}
+
+@media (max-width: 640px) {
+  .reviews__item {
+    flex-wrap: wrap;
+    row-gap: 20px;
+  }
+
+  .reviews__img-inner {
+    margin: 0 auto 17px;
+    width: 172px;
+  }
+
+  .reviews__text {
+    max-width: 100%;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .reviews__title {
+    margin-bottom: 15px;
+  }
+
+  .reviews__item {
+    row-gap: 16px;
+  }
+
+  .reviews__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .reviews__img-inner {
+    width: 86px;
+    margin: 0 auto 9px;
+  }
+
+  .reviews__text {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
