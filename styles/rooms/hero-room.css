@@ -1,0 +1,168 @@
+.hero-room {
+  padding: 35px 0 50px;
+}
+
+.hero-room__link {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.27273;
+}
+
+.hero-room__link:hover,
+.hero-room__link:focus {
+  color: var(--color-pink);
+}
+
+.hero-room__link:focus {
+  outline: none;
+}
+
+.hero-room__link:active {
+  color: var(--color-purple);
+}
+
+.hero-room__link-icon {
+  color: inherit;
+}
+
+.hero-room__link-icon,
+.hero-room__link-text {
+  transition-property: color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.hero-room__banner {
+  position: relative;
+
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-bottom: 100px;
+}
+
+.hero-room__image {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-room__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 0.89;
+  text-transform: uppercase;
+}
+
+.hero-room__description {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+/* Media */
+
+@media (max-width: 1080px) {
+  .hero-room {
+    padding-bottom: 35px;
+  }
+
+  .hero-room__banner {
+    margin-bottom: 70px;
+  }
+
+  .hero-room__description {
+    max-width: 800px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 940px) {
+  .hero-room {
+    padding: 25px 0 30px;
+  }
+
+  .hero-room__link {
+    font-size: 16px;
+    line-height: 1.75;
+  }
+
+  .hero-room__banner {
+    margin-bottom: 60px;
+  }
+
+  .hero-room__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
+
+  .hero-room__description {
+    max-width: 688px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-room__link {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.33;
+  }
+
+  .hero-room__link-icon {
+    width: 20px;
+  }
+
+  .hero-room__banner {
+    margin-bottom: 45px;
+  }
+
+  .hero-room__title {
+    font-size: 45px;
+  }
+
+  .hero-room__description {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-room {
+    padding: 10px 0 15px;
+  }
+
+  .hero-room__link {
+    font-size: 12px;
+  }
+
+  .hero-room__link-icon {
+    width: 16px;
+  }
+
+  .hero-room__banner {
+    margin-bottom: 30px;
+  }
+
+  .hero-room__title {
+    font-size: 30px;
+  }
+}

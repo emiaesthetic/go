@@ -1,0 +1,60 @@
+.other-rooms {
+  --cart-count: 3;
+  --row-gap: 20px;
+  --column-gap: 20px;
+}
+
+.other-rooms__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--row-gap) var(--column-gap);
+}
+
+.other-rooms__item {
+  position: relative;
+  flex-basis: calc((100% - var(--column-gap) * (var(--cart-count) - 1)) / var(--cart-count));
+}
+
+.other-rooms__image {
+  width: 100%;
+}
+
+.other-rooms__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: min-content;
+
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Media */
+
+@media (max-width: 940px) {
+  .other-rooms {
+    --column-gap: 8px;
+  }
+
+  .other-rooms__name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .other-rooms {
+    --cart-count: 1;
+    --row-gap: 5px;
+  }
+
+  .other-rooms__list {
+    flex-wrap: wrap;
+  }
+}
+

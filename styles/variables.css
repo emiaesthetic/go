@@ -1,0 +1,46 @@
+:root {
+  --container-width: 1180px;
+  --container-padding-x: 60px;
+
+  --color-light: #fff;
+  --color-dark: #000;
+  --color-dark-accent: #211e1e;
+  --color-dark-secondary: #1c1a1a;
+  --color-wisteria: #eadeed;
+  --color-pink: #cd06ff;
+  --color-plum: #840aa3;
+  --color-eggplant: #6c0287;
+  --color-purple: #640aa3;
+  --color-purple-accent: #440f51;
+
+  --background-color: #1b1a1b;
+  --background-color-accent: #440f51;
+
+  --font-family: 'Arial', sans-serif;
+  --second-family: 'Arial Black', sans-serif;
+
+  --border-radius: 10px;
+
+  --transition-duration: .2s;
+  --transition-timing-function: ease-in;
+}
+
+@media (max-width: 1080px) {
+  :root {
+    --border-radius: 8px;
+  }
+}
+
+@media (max-width: 940px) {
+  :root {
+    --container-padding-x: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --container-padding-x: 20px;
+
+    --border-radius: 4px;
+  }
+}
