@@ -1,0 +1,209 @@
+.accordion:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.accordion__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.167;
+}
+
+.accordion__control {
+  --textColor: var(--color-dark-secondary);
+  --backgroundColor: var(--color-light);
+  --borderColor: var(--color-purple-accent);
+  --hoverColor: var(--color-light);
+  --hoverBackgroundColor: var(--color-eggplant);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20px;
+
+  width: 100%;
+  padding: 20px 70px;
+
+  color: var(--textColor);
+  background-color: var(--backgroundColor);
+}
+
+.accordion:nth-child(even) .accordion__control {
+  --textColor: var(--color-light);
+  --backgroundColor: var(--color-purple-accent);
+  --borderColor: var(--color-light);
+  --hoverColor: var(--color-eggplant);
+  --hoverBackgroundColor: var(--color-light);
+}
+
+.accordion__control:focus {
+  outline: none;
+}
+
+.accordion__icon {
+  position: relative;
+  flex-shrink: 0;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border: 2px solid var(--borderColor);
+
+  border-radius: 100%;
+  background-color: transparent;
+
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.accordion__control:hover .accordion__icon,
+.accordion__control:focus-within .accordion__icon {
+  background-color: var(--hoverBackgroundColor);
+}
+
+.accordion__icon:before,
+.accordion__icon:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--borderColor);
+}
+
+.accordion__icon:before {
+  width: 20px;
+  height: 1px;
+}
+
+.accordion__icon:after {
+  width: 1px;
+  height: 20px;
+
+  transition-property: opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.accordion.open .accordion__icon:after {
+  opacity: 0;
+}
+
+.accordion__control:hover .accordion__icon:before,
+.accordion__control:hover .accordion__icon:after,
+.accordion__control:focus-within .accordion__icon:before,
+.accordion__control:focus-within .accordion__icon:after {
+  background-color: var(--hoverColor);
+}
+
+.accordion__content {
+  box-sizing: content-box;
+  height: 0;
+  overflow: hidden;
+  padding: 0 70px;
+  will-change: height;
+
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.17;
+
+  opacity: 0;
+  color: var(--color-dark-secondary);
+  background-color: var(--color-light);
+
+  transition-property: height, padding, opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+}
+
+.accordion.open .accordion__content {
+  overflow: visible;
+  padding: 40px 70px;
+  opacity: 1;
+}
+
+/* Media */
+
+@media (max-width: 1080px) {
+  .accordion:not(:last-of-type) {
+    margin-bottom: 16px;
+  }
+
+  .accordion__control {
+    padding: 12px 25px;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .accordion.open .accordion__content {
+    padding: 30px 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .accordion__control {
+    padding: 12px 65px 12px 59px;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 18px;
+    line-height: 1.33;
+  }
+
+  .accordion.open .accordion__content {
+    padding: 30px 65px 30px 59px;
+  }
+}
+
+@media (max-width: 680px) {
+  .accordion:not(:last-of-type) {
+    margin-bottom: 10px;
+  }
+
+  .accordion__control {
+    padding: 10px 25px;
+    column-gap: 10px;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 14px;
+  }
+
+  .accordion.open .accordion__content {
+    padding: 20px 25px;
+  }
+
+  .accordion__icon {
+    width: 30px;
+    height: 30px;
+    border-width: 1px;
+  }
+
+  .accordion__icon:before {
+    width: 14px;
+  }
+
+  .accordion__icon:after {
+    height: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .accordion__control {
+    padding: 8px 13px 8px 10px;
+  }
+
+  .accordion__title,
+  .accordion__content {
+    font-size: 12px;
+  }
+
+  .accordion.open .accordion__content {
+    padding: 12px 13px 12px 10px;
+  }
+}

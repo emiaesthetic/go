@@ -1,9 +1,8 @@
 @import 'normalize.css';
-@import 'fonts.css';
 @import 'global.css';
 @import 'variables.css';
-@import 'button.css';
 @import 'header.css';
+@import 'modal.css';
 @import 'hero.css';
 @import 'services.css';
 @import 'rooms.css';
@@ -11,6 +10,7 @@
 @import 'about.css';
 @import 'reviews.css';
 @import 'fqa.css';
+@import 'accordion.css';
 @import 'contacts.css';
 @import 'footer.css';
 @import 'rooms/hero-room.css';

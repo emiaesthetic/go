@@ -1,4 +1,10 @@
 # macos
 .DS_Store
 
+# main
 .vscode/
+
+# npm
+node_modules/
+package-lock.json
+package.json

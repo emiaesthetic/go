@@ -2,74 +2,6 @@
   padding-bottom: 45px;
 }
 
-.fqa__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 70px;
-  gap: 20px;
-
-  color: var(--color-dark-secondary);
-  background-color: var(--color-light);
-}
-
-.fqa__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.fqa__item:nth-child(even) {
-  color: var(--color-light);
-  background-color: var(--color-purple-accent);
-}
-
-.fqa__text {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 1.17;
-
-  color: inherit;
-}
-
-.fqa__icon {
-  flex-shrink: 0;
-
-  border: 2px solid var(--color-purple-accent);
-  border-radius: 50%;
-  cursor: pointer;
-  color: var(--color-purple-accent);
-
-  transition-property: background-color, border-color, color;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.fqa__item:nth-child(even) .fqa__icon {
-  color: var(--color-purple-dark);
-  border-color: var(--color-purple-dark);
-}
-
-.fqa__item:nth-child(even) .fqa__icon:hover {
-  color: var(--color-eggplant);
-  border-color: transparent;
-  background-color: var(--color-light);
-}
-
-.fqa__item:nth-child(odd) .fqa__icon:hover  {
-  color: var(--color-light);
-  border-color: transparent;
-  background-color: var(--color-eggplant);
-}
-
-.fqa__line-active {
-  transition-property: opacity;
-  transition-duration: var(--transition-duration);
-  transition-timing-function: var(--transition-timing-function);
-}
-
-.fqa__icon:active .fqa__line-active {
-  opacity: 0;
-}
-
 /* Media */
 
 @media (max-width: 1080px) {
@@ -80,51 +12,11 @@
   .fqa__title {
     margin-bottom: 26px;
   }
-
-  .fqa__item {
-    padding: 12px 25px;
-  }
-
-  .fqa__item:not(:last-child) {
-    margin-bottom: 16px;
-  }
-
-  .fqa__text {
-    font-size: 20px;
-    line-height: 1.2;
-  }
 }
 
 @media (max-width: 768px) {
   .fqa__title {
     margin-bottom: 30px;
-  }
-
-  .fqa__item {
-    padding: 12px 65px 12px 59px;
-  }
-
-  .fqa__text {
-    font-size: 18px;
-    line-height: 1.33;
-  }
-}
-
-@media (max-width: 640px) {
-  .fqa__item {
-    padding: 10px 25px;
-  }
-
-  .fqa__item:not(:last-child) {
-    margin-bottom: 10px;
-  }
-
-  .fqa__text {
-    font-size: 14px;
-  }
-
-  .fqa__icon {
-    width: 30px;
   }
 }
 
@@ -133,16 +25,7 @@
     padding-bottom: 15px;
   }
 
-  .fqa__item {
-    padding: 8px 13px 8px 10px;
-    gap: 0;
-  }
-
   .fqa__title {
     margin-bottom: 15px;
-  }
-
-  .fqa__text {
-    font-size: 12px;
   }
 }
