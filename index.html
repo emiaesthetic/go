@@ -17,6 +17,7 @@
   <title>GAME OVER</title>
 
   <link rel="stylesheet" href="styles/styles.css">
+  <script src="js/index.js" type="module"></script>
 </head>
 <body>
   <header class="header">
@@ -508,46 +509,52 @@
     <section class="fqa">
       <div class="container">
         <h2 class="fqa__title">Частые вопросы</h2>
-
-        <ul class="fqa__list">
-          <li class="fqa__item">
-            <p class="fqa__text">Можно ли забронировать комнату онлайн?</p>
-            <svg class="fqa__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="fqa__line-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
-              <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
-            </svg>
+        <ul class="accordion__list">
+          <li class="accordion">
+            <button class="accordion__control">
+              <span class="accordion__title">Можно ли забронировать комнату онлайн?</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <p class="accordion__content" aria-hidden="true">
+              Да, забронировать комнату вы&nbsp;можете онлайн, заполнив форму на&nbsp;нашем сайте.
+              Также вы&nbsp;можете забронировать комнату позвонив по&nbsp;телефону&nbsp;8 (999) 958&nbsp;&mdash; 48&nbsp;&mdash; 38.
+            </p>
           </li>
 
-          <li class="fqa__item">
-            <p class="fqa__text">Могут ли мне вернуть деньги за бронь?</p>
-            <svg class="fqa__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="fqa__line-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
-              <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
-            </svg>
+          <li class="accordion">
+            <button class="accordion__control">
+              <span class="accordion__title">Могут ли мне вернуть деньги за бронь?</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <p class="accordion__content" aria-hidden="true">
+              В&nbsp;случае отмены бронирования комнаты отдыха заказчик, по&nbsp;общему правилу, может вернуть
+              уплаченную им&nbsp;сумму за&nbsp;вычетом фактически понесенных клубом расходов.
+            </p>
           </li>
 
-          <li class="fqa__item">
-            <p class="fqa__text">Какая комната самая популярная?</p>
-            <svg class="fqa__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="fqa__line-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
-              <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
-            </svg>
+          <li class="accordion">
+            <button class="accordion__control">
+              <span class="accordion__title">Какая комната самая популярная?</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <p class="accordion__content" aria-hidden="true">
+              Наибольшей популярностью пользуется Star Wars. Комната оформлена в&nbsp;стиле культовой киносаги
+              с&nbsp;использованием световых и&nbsp;звуковых эффектов, голографических проекций и&nbsp;других
+              современных технологий.
+            </p>
           </li>
 
-          <li class="fqa__item">
-            <p class="fqa__text">Как получить VIP карту?</p>
-            <svg class="fqa__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="fqa__line-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
-              <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
-            </svg>
-          </li>
-
-          <li class="fqa__item">
-            <p class="fqa__text">Какая комната самая популярная?</p>
-            <svg class="fqa__icon" width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path class="fqa__line-active" d="M22.8305 14H23.5085V34H22.8305V14Z" fill="currentColor" />
-              <path d="M13 24.1695V23.4915H33V24.1695H13Z" fill="currentColor" />
-            </svg>
+          <li class="accordion">
+            <button class="accordion__control">
+              <span class="accordion__title">Как получить VIP карту?</span>
+              <span class="accordion__icon"></span>
+            </button>
+            <p class="accordion__content" aria-hidden="true">
+              Для получения VIP-статуса клиент должен быть постоянным членом клуба и&nbsp;регулярно его посещать.
+              Клиент не&nbsp;должен нарушать правила клуба, такие как порча имущества, использование запрещённых
+              программ или материалов и&nbsp;т.&nbsp;д. Необходимо выполнить по&nbsp;сумме трат в&nbsp;клубе
+              за&nbsp;определённый период времени.
+            </p>
           </li>
         </ul>
       </div>
@@ -650,6 +657,26 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay">
+    <div class="container">
+      <form class="modal" action="/something" method="post">
+        <button class="modal__close" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+        </button>
+        <h2 class="modal__title">Заказать звонок</h2>
+        <div class="modal__field">
+          <label class="modal__label" for="user-name">Имя</label>
+          <input class="modal__input" type="text" name="userName" id="user-name">
+        </div>
+        <div class="modal__field">
+          <label class="modal__label" for="user-phone">Телефон</label>
+          <input class="modal__input" type="tel" name="userPhone" id="user-phone">
+        </div>
+        <button class="modal__button" type="submit" disabled>Позвонить мне</button>
+      </form>
+    </div>
+  </div>
 
   <script>
     document.addEventListener('click', event => {
