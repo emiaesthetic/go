@@ -90,7 +90,6 @@
   color: var(--color-light);
   background-color: var(--color-eggplant);
   border-radius: var(--border-radius);
-  box-shadow: 0 0 20px var(--color-eggplant);
 
   transition-property: background-color, transform;
   transition-duration: var(--transition-duration);

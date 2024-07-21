@@ -2,6 +2,8 @@
 @import 'global.css';
 @import 'variables.css';
 @import 'header.css';
+@import 'burger.css';
+@import 'scroll.css';
 @import 'modal.css';
 @import 'hero.css';
 @import 'services.css';
