@@ -1,8 +1,8 @@
-const modalControl = (overlay, openBtn) => {
+const modalControl = (overlay, btnGroup) => {
   const openModal = () => overlay.classList.add('open');
   const closeModal = () => overlay.classList.remove('open');
 
-  openBtn.addEventListener('click', openModal);
+  btnGroup.forEach((button) => button.addEventListener('click', openModal));
 
   overlay.addEventListener('click', (e) => {
     const target = e.target;
@@ -39,12 +39,12 @@ const formControl = (form, submitBtn, closeModal) => {
 };
 
 const init = () => {
-  const openBtn = document.querySelector('.header__button');
+  const buttons = document.querySelectorAll('.header__button');
   const overlay = document.querySelector('.overlay');
   const form = overlay.querySelector('.modal');
   const submitBtn = overlay.querySelector('.modal__button');
 
-  const {closeModal} = modalControl(overlay, openBtn);
+  const {closeModal} = modalControl(overlay, buttons);
   formControl(form, submitBtn, closeModal);
 };
 
