@@ -60,7 +60,6 @@ items.forEach((item) => {
 });
 
 window.addEventListener('resize', () => {
-  console.log(window.innerWidth);
   if (window.innerWidth <= 940) {
     menu.style.transform = `translateX(${-100}%)`;
   } else {

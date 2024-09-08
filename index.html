@@ -16,7 +16,10 @@
 
   <title>GAME OVER</title>
 
+  <link rel="stylesheet" href="/node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="node_modules/choices.js/public/assets/styles/choices.min.css" />
   <link rel="stylesheet" href="styles/styles.css">
+
   <script src="js/index.js" type="module"></script>
 </head>
 <body>
@@ -348,31 +351,21 @@
                 <div class="form__details-numbers">
                   <div class="form__details-wrapper">
                     <div class="form__details-item date">
-                      <input class="form__details-input date__input" type="text" name="date" id="date" placeholder="Дата" onfocus="(this.type='date')" onblur="(this.type='text')" required>
-                      <label class="date__label" for="date">
-                        <svg class="form__details-icon" width="19" height="12" viewBox="0 0 19 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" />
-                        </svg>
-                      </label>
+                      <input class="form__details-input date__input" type="text" name="date" id="date" placeholder="Дата" required>
                     </div>
 
                     <div class="form__details-item time">
-                      <input class="form__details-input time__input" type="text" name="time" id="time" placeholder="Время" onfocus="(this.type='time')" onblur="(this.type='text')" required>
-                      <label class="time__label" for="time">
-                        <svg class="form__details-icon" width="19" height="12" viewBox="0 0 19 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" />
-                        </svg>
-                      </label>
+                      <select class="select-time custom-select" name="time" id="time" data-placeholder="Время">
+                        <option class="select-time__value" value="10:00">10:00</option>
+                        <option class="select-time__value" value="12:00">12:00</option>
+                        <option class="select-time__value" value="14:00">14:00</option>
+                        <option class="select-time__value" value="17:30">17:30</option>
+                      </select>
                     </div>
                   </div>
 
                   <div class="form__details-item quantity">
                     <input class="form__details-input quantity__input" type="number" name="quantity" id="quantity" placeholder="Сколько человек" required>
-                    <label class="quantity__label" for="quantity">
-                      <svg class="form__details-icon" width="19" height="12" viewBox="0 0 19 12" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" />
-                      </svg>
-                    </label>
                   </div>
                 </div>
 
@@ -453,58 +446,74 @@
       <div class="container">
         <h2 class="reviews__title">Отзывы посетителей</h2>
 
-        <ul class="reviews__list">
-          <li class="reviews__item">
-            <figure class="reviews__reviewer">
-              <div class="reviews__img-inner">
-                <img
-                  class="reviews__review-img"
-                  src="images/reviews/reviewer-1.png"
-                  alt="Фото автора комментария"
-                >
-              </div>
-              <figcaption class="reviews__reviewer-name">Макс Самойлов</figcaption>
-            </figure>
+        <div class="swiper">
+          <ul class="reviews__list swiper-wrapper">
+            <li class="reviews__item swiper-slide">
+              <figure class="reviews__reviewer">
+                <div class="reviews__img-inner">
+                  <img
+                    class="reviews__review-img"
+                    src="images/reviews/reviewer-1.png"
+                    alt="Фото автора комментария"
+                  >
+                </div>
+                <figcaption class="reviews__reviewer-name">Макс Самойлов</figcaption>
+              </figure>
 
-            <p class="reviews__text">
-              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
-            </p>
-          </li>
+              <p class="reviews__text">
+                Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+              </p>
+            </li>
 
-          <li class="reviews__item">
-            <figure class="reviews__reviewer">
-              <div class="reviews__img-inner">
-                <img
-                  class="reviews__review-img"
-                  src="images/reviews/reviewer-2.png"
-                  alt="Фото автора комментария"
-                >
-              </div>
-              <figcaption class="reviews__reviewer-name">Оксана Григорьева</figcaption>
-            </figure>
+            <li class="reviews__item swiper-slide">
+              <figure class="reviews__reviewer">
+                <div class="reviews__img-inner">
+                  <img
+                    class="reviews__review-img"
+                    src="images/reviews/reviewer-2.png"
+                    alt="Фото автора комментария"
+                  >
+                </div>
+                <figcaption class="reviews__reviewer-name">Оксана Григорьева</figcaption>
+              </figure>
 
-            <p class="reviews__text">
-              Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.
-            </p>
-          </li>
+              <p class="reviews__text">
+                Были в комнате Дикий Запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.
+              </p>
+            </li>
 
-          <li class="reviews__item">
-            <figure class="reviews__reviewer">
-              <div class="reviews__img-inner">
-                <img
-                  class="reviews__review-img"
-                  src="images/reviews/reviewer-3.png"
-                  alt="Фото автора комментария"
-                >
-              </div>
-              <figcaption class="reviews__reviewer-name">Никита Ященко</figcaption>
-            </figure>
+            <li class="reviews__item swiper-slide">
+              <figure class="reviews__reviewer">
+                <div class="reviews__img-inner">
+                  <img
+                    class="reviews__review-img"
+                    src="images/reviews/reviewer-3.png"
+                    alt="Фото автора комментария"
+                  >
+                </div>
+                <figcaption class="reviews__reviewer-name">Никита Ященко</figcaption>
+              </figure>
 
-            <p class="reviews__text">
-              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса.
-            </p>
-          </li>
-        </ul>
+              <p class="reviews__text">
+                Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса.
+              </p>
+            </li>
+          </ul>
+
+          <button class="reviews__button reviews__button--prev">
+            <svg width="34" height="66" viewBox="0 0 34 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z" />
+              <path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z" />
+            </svg>
+          </button>
+
+          <button class="reviews__button reviews__button--next">
+            <svg width="35" height="66" viewBox="0 0 35 66" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z" />
+              <path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z" />
+            </svg>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -675,7 +684,7 @@
           <label class="modal__label" for="user-phone">Телефон</label>
           <input class="modal__input" type="tel" name="userPhone" id="user-phone">
         </div>
-        <button class="modal__button" type="submit" disabled>Позвонить мне</button>
+        <button class="modal__button" type="submit">Позвонить мне</button>
       </form>
     </div>
   </div>

@@ -9,6 +9,7 @@
 @import 'services.css';
 @import 'rooms.css';
 @import 'order.css';
+@import 'choices.css';
 @import 'about.css';
 @import 'reviews.css';
 @import 'fqa.css';
@@ -18,3 +19,4 @@
 @import 'rooms/hero-room.css';
 @import 'rooms/about-room.css';
 @import 'rooms/other-rooms.css';
+@import 'custom-flat.css';

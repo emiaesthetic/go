@@ -173,8 +173,18 @@
 }
 
 .modal__button:disabled {
-  opacity: 0.8;
+  opacity: 0.5;
+  cursor: auto;
   box-shadow: none;
+}
+
+.modal__button:disabled:hover,
+.modal__button:disabled:focus-visible,
+.modal__button:disabled:active {
+  color: var(--color-eggplant);
+  background-color: var(--color-light);
+  transform: scale(1);
+  outline: none;
 }
 
 /* Media */
